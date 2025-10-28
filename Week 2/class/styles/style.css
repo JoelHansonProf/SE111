@@ -1,0 +1,21 @@
+li{
+    color:red;
+}
+ol
+{
+    border: 5px solid salmon;
+}
+
+#gameList
+{
+    border: 20px solid fuchsia;
+}
+
+.eggs{
+   border: 0px solid white; 
+}
+
+.eggs:hover
+{
+    border: 2px solid salmon;
+}

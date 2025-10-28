@@ -1,0 +1,248 @@
+body {
+    display: flex;
+    justify-content: center;
+    /* A special value that will generate a gradient image */
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    ;
+    /* Using 100% of the viewport height */
+    height: 100vh;
+}
+
+#main {
+    border: 5px solid black;
+    width: 1000px;
+    height: 800px;
+    background-color: salmon;
+
+
+}
+
+#headerVideoGame {
+    border: 20px solid blue;
+}
+
+#headerVideoGame h1 {
+    font-family: "Frijole";
+    text-align: center;
+}
+
+#header {
+    height: 130px;
+    border: 5px solid black;
+
+    animation-name: funnyName;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#header h1:hover {
+    animation-name: rotateText;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+#header h1 {
+    font-family: "Metal Mania", system-ui;
+    font-size: 50px;
+    text-align: center;
+
+    animation-duration: 2s;
+
+}
+
+#nav {
+    font-family: "Frijole";
+    height: 50px;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 25px
+}
+
+.nav-btn {
+    border: 5px solid black;
+    padding: 5px
+}
+
+
+.nav-btn:link {
+    text-decoration: none;
+}
+
+#header h1:hover{
+    font-size: 200px;
+}
+
+.nav-btn:hover {
+    font-size: 20px;
+    color: bisque;
+    text-decoration: underline;
+}
+
+.nav-btn:visited {
+    text-decoration: line-through;
+    color: black;
+}
+
+
+
+
+#content {
+    font-family: "Honk", system-ui;
+    height: 520px;
+    width: 650px;
+    text-align: center;
+
+
+    margin: auto;
+
+
+    animation-name: percentageAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#loremIpsum {
+    z-index: 1;
+    margin: auto;
+    border: 1px solid springgreen;
+}
+
+
+
+#metalGif {
+    margin: auto;
+    z-index: 0;
+    height: 100px;
+
+    /* Name of animation */
+    animation-name: metalGifSpin;
+    /* How long the animation plays for */
+    animation-duration: 3s;
+    /* How many times the animation should play */
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+}
+
+#content h2 {
+    font-size: 50px;
+}
+
+#homePage {
+    animation-name: funnyName;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+#appear {
+    font-size: 50px;
+
+    display: inline-block;
+    border-radius: 4px;
+    margin: auto;
+    background-color: maroon;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+#appear #arrow::after {
+    content: '';
+    background-image: url(../Images/metalgif.webp);
+    position: absolute;
+    opacity: 0;
+
+}
+
+#appear:hover span {
+    padding-right: 30px;
+}
+
+#appear:hover #arrow::after {
+    transition: 2s;
+    opacity: 1;
+    right: 40
+}
+
+
+@keyframes funnyName {
+    from {
+        color: blanchedalmond;
+    }
+
+    to {
+        color: olive;
+    }
+}
+
+
+@keyframes metalGifSpin {
+    from {
+        border: 1px solid brown;
+        height: 100px;
+        transform: rotate(0deg)
+    }
+
+    to {
+        border: 10px solid black;
+        transform: rotate(360deg);
+        height: 200px;
+    }
+
+}
+
+@keyframes percentageAnimation {
+    0% {
+        background-color: salmon;
+        transform: rotate(0deg);
+        transform: translate(0px,0px)
+;    }
+
+    25% {
+        background-color: blueviolet;
+        transform: rotate(-20deg);
+        transform: translate(0px,100px)
+    }
+
+    50% {
+        background-color: bisque;
+        transform: rotate(20deg);
+        transform: translate(0px,-100px)
+    }
+
+    75% {
+        background-color: chartreuse;
+        transform: translate(500px,0px);
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        background-color: tomato;
+        transform: translate(-500px,0px);
+        transform: rotate(20deg);
+    }
+}
+
+
+
+@keyframes textAnimation {
+    from {
+        color: black;
+    }
+
+    to {
+        color: maroon;
+    }
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
