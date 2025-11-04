@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Lab</title>
+</head>
+
+<body>
+    <!--  -->
+
+    <script>
+        // Hello
+        // This is a string
+        var test = "hi";
+        // This shows that variable names can be as long as need
+        var hiThisIsAStupidLongVariableName = "blingus"
+        console.log(test)
+        console.log(10)
+        console.log("Hello")
+        console.log(hiThisIsAStupidLongVariableName)
+        // A boolean
+        var bool = false;
+
+        var x = 20;
+        // x > (conditional operator) 20
+
+        //Conditional Operators
+        // > Greater than
+        // < Less than
+        // <= Less Than equal
+        // >= Greater than or equal
+        // == Same value
+        // != not equal
+        // === same value and data type
+
+        //Logical Operators
+        // || or
+        // && and
+
+        if (x > 21 && x < 30) 
+        {
+            console.log("X has passed conditions")
+        }
+
+        // ++ - adds one
+        x++
+        console.log(x)
+
+        //Two ways to add
+        x = x + 5
+        x += 5
+
+       // var y = 25
+
+        //Adding a variable to another variable
+        //x += y
+
+
+        //Multiplying
+        x = x * 2
+        
+        //Shorthand 
+        x *= 2
+
+        // A function
+        function doSomething()
+        {
+            console.log("Hello I am in a function")
+        }
+
+        doSomething();
+        doSomething();
+        doSomething();
+
+        //A Function with parameters
+        function add(numOne,numTwo)
+        {
+            //console.log(numOne + numTwo)
+            //Passing back data
+            return numOne + numTwo;
+        }
+
+        console.log(add(20,55));
+        alert(add(59828,234678234))
+
+        var name = prompt("What is your name?")
+        alert(name + " youre not in class :C")
+
+
+        var wayOne = 'hi'
+        var wayTwo = "hi"
+
+        var um = '"Hello "I am me ""'
+
+        //String concatenation
+        var addedStrings = "THis is string 1" + "This is string two"
+
+        var name = "Ben";
+        var num = 10;
+        // You can add almost anything to strings!
+        console.log(num+name)
+        console.log(name+true)
+
+        var numberString = "278237862476824"
+        //Javascript allows us to convert things to other types
+        var conversion = Number(numberString)
+        console.log(conversion)
+        var backConversion = String(conversion)
+
+        //Check what type something is
+        if(typeof conversion === 'string')
+        {
+            console.log(true)
+        }
+            //console.log("My favorite show is " + name + num)
+
+            //String literal
+            var tvShow = `Hi I really like ${name} and my favorite number is ${num}`
+            console.log(tvShow)
+    </script>
+
+</body>
+
+</html>
