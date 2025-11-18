@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Lab</title>
+</head>
+
+<body>
+    <!--  -->
+
+    <div id="query">
+        <input type="button" id="submit" value="Submit">
+    </div>
+
+    <script>
+        //document -> the document/html 
+        // file that loaded this javascript
+        var divTag = document.querySelector("#query")
+        var getElement = document.getElementById("query")
+
+        console.log(divTag.innerHTML)
+
+        divTag.innerHTML += "<h1>HELLO!</h1>"
+
+        var button = document.getElementById("submit")
+        console.log(button)
+
+        //When the button is in the clicked state
+        //Call the alertUser function   
+        button.addEventListener('click', alertUser)
+
+
+
+        function alertUser() {
+            alert("You Pressed a button")
+
+        }
+
+
+
+        var fruits = [
+            "Banana",
+            "Apple",
+            "Orange",
+            "Pomegranate",
+            "Tomato"
+        ]
+
+
+
+    </script>
+
+</body>
+
+</html>
