@@ -43,8 +43,31 @@ function bf()
     //Getting the div container
     var aboutToDieDiv = document.getElementById('divContainer');
     //Document remove child
-    document.removeChild(aboutToDieDiv)
+    document.querySelector('body').removeChild(aboutToDieDiv)
 }
 
 //Button that Executes order 66
 document.getElementById('order66').addEventListener('click',bf)
+
+
+//get all elements with the names tag
+
+var names = document.querySelectorAll('.names')
+
+for(var i = 0; i < names.length; i++)
+{
+    console.log(names[i].innerText)
+    names[i].style.color = "blanchedalmond"
+}
+
+
+//Query Selection | Advanced
+
+var advanceDiv = document.getElementById("advanced")
+
+//Get Children
+console.log(document.querySelector("#advanced h2").innerText)
+
+console.log(document.querySelector("#advanced h2 p").innerText)
+
+console.log(document.querySelector("#advanced #generalgrevious"))
